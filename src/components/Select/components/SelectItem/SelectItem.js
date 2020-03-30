@@ -6,7 +6,7 @@ import React from 'react';
  */
 export default function SelectItem(props) {
   return (
-    <span>
+    <span {...props}>
       {props.children}
     </span>
   );

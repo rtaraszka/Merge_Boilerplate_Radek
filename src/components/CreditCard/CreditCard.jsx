@@ -74,6 +74,7 @@ class CreditCard extends React.Component {
     },
     name: '',
     number: '',
+    onClick: 'PropTypes.func',
     onInvalid: () => {},
     onValid: () => {},
     placeholders: {
