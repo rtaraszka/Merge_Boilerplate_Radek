@@ -66,7 +66,6 @@ class CreditCard extends React.Component {
     acceptedCards: [],
     cvc: '',
     expiry: '',
-
     focused: '',
     issuer: '',
     locale: {
@@ -74,7 +73,7 @@ class CreditCard extends React.Component {
     },
     name: '',
     number: '',
-    onClick: 'PropTypes.func',
+    onClick: () => {},
     onInvalid: () => {},
     onValid: () => {},
     placeholders: {

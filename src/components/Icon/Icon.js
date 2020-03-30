@@ -19,7 +19,7 @@ const getIconSize = (size) => {
   }
 };
 
-export default function Icon({ color, icon, size }) {
+export default function Icon({ color, icon, size}) {
   const iconSize = getIconSize(size);
 
   return React.createElement(Icons[icon], {
@@ -263,5 +263,4 @@ Icon.propTypes = {
     'VisibilitySolidVisibleSvg',
   ]),
   size: PropTypes.oneOf(['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']),
-  onClick: PropTypes.func,
 };
