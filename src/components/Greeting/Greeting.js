@@ -17,6 +17,7 @@ function Greeting({ lang, name, t }) {
 Greeting.propTypes = {
   lang: PropTypes.oneOf(['de', 'en', 'pl']),
   name: PropTypes.string,
+  onClick: PropTypes.func,
   /**
    * @uxpinignoreprop
    */

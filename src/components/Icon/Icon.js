@@ -263,4 +263,5 @@ Icon.propTypes = {
     'VisibilitySolidVisibleSvg',
   ]),
   size: PropTypes.oneOf(['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']),
+  onClick: PropTypes.func,
 };
