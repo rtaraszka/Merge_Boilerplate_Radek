@@ -52,7 +52,6 @@ class CreditCard extends React.Component {
       PropTypes.string,
       PropTypes.number,
     ]),
-    onClick: PropTypes.func,
     onInvalid: PropTypes.func,
     onValid: PropTypes.func,
     /** @uxpinignoreprop */
@@ -73,7 +72,6 @@ class CreditCard extends React.Component {
     },
     name: '',
     number: '',
-    onClick: () => {},
     onInvalid: () => {},
     onValid: () => {},
     placeholders: {
