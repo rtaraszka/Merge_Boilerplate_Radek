@@ -17,7 +17,6 @@ module.exports = {
           'src/components/Table/Table.js',
           'src/components/Textarea/Textarea.js',
           'src/components/TrendLine/TrendLine.js',
-          // 'src/components/SimpleMap/SimpleMap.js',
         ],
       },
       {
