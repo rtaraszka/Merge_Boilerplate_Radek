@@ -15,7 +15,6 @@ module.exports = {
           'src/components/Select/Select.js',
           'src/components/Select/components/SelectItem/SelectItem.js',
           'src/components/Table/Table.js',
-          'src/components/Textarea/Textarea.js',
           'src/components/TrendLine/TrendLine.js',
         ],
       },
