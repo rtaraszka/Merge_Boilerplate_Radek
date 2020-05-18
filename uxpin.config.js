@@ -6,7 +6,7 @@ module.exports = {
         name: 'General',
         include: [
           'src/components/Button/Button.js',
-          'src/components/Camera/Camera.js',
+          // 'src/components/Camera/Camera.js',
           'src/components/CreditCard/CreditCard.jsx',
           'src/components/GoogleMap/GoogleMap.js',
           'src/components/Greeting/Greeting.js',
@@ -27,6 +27,8 @@ module.exports = {
         ],
       },
     ],
+    wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
+    webpackConfig: 'webpack.uxpin.config.js',
   },
   name: 'UXPin Merge Boilerplate',
 };
