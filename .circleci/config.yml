@@ -1,28 +1,17 @@
-version: 2
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
 jobs:
-  build:
-    docker:
-      - image: circleci/node:10.15-stretch-browsers
-    working_directory: ~/project/
+  build-and-test:
+    executor:
+      name: node/default
     steps:
       - checkout
-      - run:
-          name: 'Install dependencies'
-          command: npm install
-      - run:
-          name: 'Check'
-          command: npm run check
-      - run:
-          name: 'Test'
-          command: npm run test
-      - run:
-          name: 'Push to UXPin if branch is master'
-          command: |
-            if [[ "${CIRCLE_BRANCH}" == "master" ]]
-            then
-            npm run push
-            npm run push2
-            npm run push3    
-            else
-            echo "On '$CIRCLE_BRANCH' branch - not pushing"
-            fi
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
+workflows:
+    build-and-test:
+      jobs:
+        - build-and-test
