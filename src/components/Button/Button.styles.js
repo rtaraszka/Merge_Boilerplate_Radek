@@ -12,7 +12,7 @@ const backgroundSelector = (type, mode) => {
   if (!mode) {
     switch (type) {
       case 'primary':
-        return colors.blue.base;
+        return colors.green.base;
       case 'secondary':
         return colors.silver.base;
       case 'success':
